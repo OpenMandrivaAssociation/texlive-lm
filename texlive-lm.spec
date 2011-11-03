@@ -1,3 +1,9 @@
+# revision 23165
+# category Package
+# catalog-ctan /fonts/lm
+# catalog-date 2009-10-09 10:08:38 +0200
+# catalog-license gfsl
+# catalog-version 2.004
 Name:		texlive-lm
 Version:	2.004
 Release:	1
@@ -1141,6 +1147,7 @@ fonts aka TS1 (ts1-*.tfm).
 %doc %{_texmfdistdir}/doc/fonts/lm/tstlmts1.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/lm/lm2004mt1.zip
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -1151,3 +1158,5 @@ fonts aka TS1 (ts1-*.tfm).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
