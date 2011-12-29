@@ -18,8 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The Latin Modern family of fonts consists of 72 text fonts and
@@ -34,20 +32,12 @@ corresponding to: Cork encoding (cork-*.tfm); QX encoding (qx-
 (Vietnamese) encoding (t5-*.tfm); and Text Companion for EC
 fonts aka TS1 (ts1-*.tfm).
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -1148,7 +1138,6 @@ fonts aka TS1 (ts1-*.tfm).
 %doc %{_texmfdistdir}/doc/fonts/lm/tstlmts1.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/lm/lm2004mt1.zip
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -1159,5 +1148,3 @@ fonts aka TS1 (ts1-*.tfm).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
