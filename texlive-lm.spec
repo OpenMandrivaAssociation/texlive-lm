@@ -1148,3 +1148,17 @@ fonts aka TS1 (ts1-*.tfm).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.004-2
++ Revision: 753407
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.004-1
++ Revision: 718874
+- texlive-lm
+- texlive-lm
+- texlive-lm
+- texlive-lm
+
