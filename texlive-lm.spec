@@ -1,12 +1,12 @@
-# revision 23165
+# revision 28119
 # category Package
 # catalog-ctan /fonts/lm
-# catalog-date 2009-10-09 10:08:38 +0200
+# catalog-date 2012-05-22 10:49:40 +0200
 # catalog-license gfsl
 # catalog-version 2.004
 Name:		texlive-lm
 Version:	2.004
-Release:	2
+Release:	3
 Summary:	Latin modern fonts in outline formats
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/lm
@@ -208,7 +208,6 @@ fonts aka TS1 (ts1-*.tfm).
 %{_texmfdistdir}/fonts/map/dvips/lm/lm-texnansi.map
 %{_texmfdistdir}/fonts/map/dvips/lm/lm-ts1.map
 %{_texmfdistdir}/fonts/map/dvips/lm/lm.map
-%{_texmfdistdir}/fonts/opentype/public/lm/lmmath-regular.otf
 %{_texmfdistdir}/fonts/opentype/public/lm/lmmono10-italic.otf
 %{_texmfdistdir}/fonts/opentype/public/lm/lmmono10-regular.otf
 %{_texmfdistdir}/fonts/opentype/public/lm/lmmono12-regular.otf
@@ -1148,17 +1147,3 @@ fonts aka TS1 (ts1-*.tfm).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.004-2
-+ Revision: 753407
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.004-1
-+ Revision: 718874
-- texlive-lm
-- texlive-lm
-- texlive-lm
-- texlive-lm
-
