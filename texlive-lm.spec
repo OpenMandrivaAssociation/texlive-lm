@@ -6,7 +6,7 @@
 # catalog-version 2.004
 Name:		texlive-lm
 Version:	2.004
-Release:	11
+Release:	12
 Summary:	Latin modern fonts in outline formats
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/lm
