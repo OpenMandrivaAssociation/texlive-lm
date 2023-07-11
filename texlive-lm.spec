@@ -1,6 +1,6 @@
 Name:		texlive-lm
-Version:	61719
-Release:	2
+Version:	65956
+Release:	1
 Summary:	Latin modern fonts in outline formats
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/lm
