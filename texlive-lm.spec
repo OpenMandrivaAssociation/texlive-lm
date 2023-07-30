@@ -1,5 +1,5 @@
 Name:		texlive-lm
-Version:	65956
+Version:	67718
 Release:	1
 Summary:	Latin modern fonts in outline formats
 Group:		Publishing
