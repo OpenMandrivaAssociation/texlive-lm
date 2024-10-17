@@ -3,7 +3,7 @@ Version:	67718
 Release:	1
 Summary:	Latin modern fonts in outline formats
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/lm
+URL:		https://www.ctan.org/tex-archive/fonts/lm
 License:	GFSL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lm.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lm.doc.r%{version}.tar.xz
